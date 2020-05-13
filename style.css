@@ -21,33 +21,20 @@
 
 #navBar {
   display: none; /* Sets navbar display to none initially */
-  animation-duration: 3s;
+  position: relative;
+  top: 4em;
+  animation-duration: 5s;
   animation-name: slidein;
 }
 
-#navBar:active {
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-}
-
+/* Keyframes for navbar animation sliding right to left */
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%;
   }
 
   to {
     margin-left: 0%;
-    width: 100%;
   }
 }
 
