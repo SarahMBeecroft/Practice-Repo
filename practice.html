@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Navbar</title>
+
+    <!-- Links to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Links to stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <button class="menu" onclick="showNav()">
+        Menu
+      </button>
+
+      <nav id="navBar">
+        <li>Home</li>
+        <li>About</li>
+        <li>Work</li>
+        <li>Contact</li>
+      </nav>
+    </div>
+
+    <script>
+      function showNav() {
+        /* Create variable to store navbar element */
+        let nav = document.getElementById('navBar');
+        if (nav.style.display === 'none') {
+          nav.style.display = 'none';
+        } else {
+          nav.style.display = 'block';
+        }
+      }
+    </script>
+  </body>
+</html>

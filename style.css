@@ -1,0 +1,58 @@
+* {
+  font-family: 'Balsamiq Sans', cursive;
+  background-color: black;
+  color: white;
+  word-spacing: 1.2em;
+}
+
+.app {
+  max-width: 1000px;
+  text-align: center;
+}
+
+.menu {
+  font-size: 24px;
+  padding: 0.3em;
+  position: relative;
+  top: 2em;
+  left: 12em;
+  display: inline-block;
+}
+
+#navBar {
+  display: none; /* Sets navbar display to none initially */
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+#navBar:active {
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+li {
+  list-style: none;
+  padding: 0.3em;
+  margin: 0.3em;
+}
