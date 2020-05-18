@@ -21,7 +21,11 @@
       </button>
 
       <nav id="navBar">
-        <button class="closeNav" onclick="hideNav()">X</button>
+        <li>
+          <button class="closeNav" id="menuButton" onclick="hideNav()">
+            X
+          </button>
+        </li>
         <li>Home</li>
         <li>About</li>
         <li>Work</li>
@@ -32,22 +36,23 @@
     <script>
       /* Create variable to store navbar element */
       let nav = document.getElementById('navBar');
+      let toggle = false;
 
-      function showNav() {
-        if (nav.style.display === 'none') {
-          nav.style.display = 'none';
-        } else {
+      const showNav = () => {
+        /* Initializes toggle, sets to false because not showing on display */
+        toggle = !toggle;
+        if (toggle === true) {
           nav.style.display = 'block';
         }
-      }
+      };
 
-      function hideNav() {
-        if (nav.style.display === 'none') {
-          nav.style.display = 'block';
-        } else {
-          nav.style.display = 'none';
+      const hideNav = () => {
+        toggle = !toggle;
+
+        if (toggle === false) {
+          nav.classList.toggle('fade');
         }
-      }
+      };
     </script>
   </body>
 </html>

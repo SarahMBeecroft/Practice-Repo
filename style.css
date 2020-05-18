@@ -6,7 +6,7 @@
 }
 
 .app {
-  max-width: 1000px;
+  width: 100vh;
   text-align: center;
 }
 
@@ -20,11 +20,32 @@
 }
 
 #navBar {
-  display: none; /* Sets navbar display to none initially */
+  display: none;
+  /* Sets navbar display to none initially */
   position: relative;
   top: 4em;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-name: slidein;
+  opacity: 1;
+  -webkit-transition: opacity 1.3s ease-in-out;
+  -moz-transition: opacity 1.3s ease-in-out;
+  -ms-transition: opacity 1.3s ease-in-out;
+  -o-transition: opacity 1.3s ease-in-out;
+  transition: opacity 1.3s ease-in-out;
+}
+
+#navBar.fade {
+  opacity: 0;
+}
+
+li {
+  width: 200px;
+  list-style: none;
+  padding: 0.3em;
+  margin: 0.3em;
+  text-transform: uppercase;
+  background: rgb(197, 18, 107);
+  padding: 1em;
 }
 
 /* Keyframes for navbar animation sliding right to left */
@@ -36,10 +57,4 @@
   to {
     margin-left: 0%;
   }
-}
-
-li {
-  list-style: none;
-  padding: 0.3em;
-  margin: 0.3em;
 }
