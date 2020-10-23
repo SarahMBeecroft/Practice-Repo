@@ -1,7 +1,6 @@
-def f_to_c():
-    f_temp = int(input("Enter temperature in Fahrenheit: "))
-    f_temp = str((f_temp - 32) * 5/9)
-    print("The temperature in Celsius is: " + f_temp + " degrees.")
+def f_to_c(f_temp):
+    f_temp = (f_temp - 32) * 5/9
+    print(f_temp)
 
 
-f_to_c()
+f100_in_celsius = f_to_c(100)
