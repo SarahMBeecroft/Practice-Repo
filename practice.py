@@ -1,7 +1,7 @@
-def nested_loops():
-    for outer in range(1, 6):
-        for inner in range(1, 6):
-            print(outer, inner)
+def f_to_c():
+    f_temp = int(input("Enter temperature in Fahrenheit: "))
+    f_temp = str((f_temp - 32) * 5/9)
+    print("The temperature in Celsius is: " + f_temp + " degrees.")
 
 
-nested_loops()
+f_to_c()
