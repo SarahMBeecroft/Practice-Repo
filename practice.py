@@ -16,3 +16,20 @@ elif age < 13:
     print("You are a child")
 else:
     print("You are an adult")
+
+fav_foods = ["pizza", "chocolate", "sushi", "curry"]
+
+for i in fav_foods:
+    print("I love to eat " + i + "!")
+
+
+def subtract(x, y):
+    return x - y
+
+
+print(subtract(5, 2))  # 3, 5 is x, 2 is y
+print(subtract(200, 50))  # 150, 200 is x, 50 is y
+print(subtract(20, 70))  # -50, 20 is x, 70 is y
+
+five = subtract(10, 5)
+print(five)
