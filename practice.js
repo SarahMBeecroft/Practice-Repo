@@ -27,3 +27,19 @@ let name = 'Sarah Beecroft';
 let nameCapitalized = name.toUpperCase();
 console.log(name);
 console.log(nameCapitalized);
+
+let person = {
+  name: 'Sarah',
+  age: 33,
+  favoriteFood: 'pizza',
+};
+
+console.log(
+  'Hi, my name is ' +
+    person.name +
+    '. I am ' +
+    person.age +
+    ' years old and my favorite food is ' +
+    person.favoriteFood +
+    '.'
+);
