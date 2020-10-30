@@ -33,3 +33,12 @@ print(subtract(20, 70))  # -50, 20 is x, 70 is y
 
 five = subtract(10, 5)
 print(five)
+
+
+def say_hi(person):
+    print("Hi " + person)
+    return person
+
+
+sarah = say_hi("Sarah")
+print(sarah)
