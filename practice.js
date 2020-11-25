@@ -45,3 +45,13 @@ function add() {
 }
 
 console.log(add(2, 4, 6, 10));
+
+function avg(...args) {
+  let sum = 0;
+  for (let value of args) {
+    sum += value;
+  }
+  return sum / args.length;
+}
+
+console.log(avg(2, 2, 2));
