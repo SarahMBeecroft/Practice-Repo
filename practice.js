@@ -35,6 +35,13 @@ for (var myLetVariable = 0; myLetVariable < 5; myLetVariable++) {
 }
 
 // myLetVariable is *not* visible out here
-let sum = (a, b) => a + b;
 
-console.log(sum(9, 9));
+function add() {
+  let sum = 0;
+  for (let i = 0, j = arguments.length; i < j; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+
+console.log(add(2, 4, 6, 10));
