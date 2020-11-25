@@ -28,18 +28,13 @@ let nameCapitalized = name.toUpperCase();
 console.log(name);
 console.log(nameCapitalized);
 
-let person = {
-  name: 'Sarah',
-  age: 33,
-  favoriteFood: 'pizza',
-};
+// myLetVariable is *not* visible out here
 
-console.log(
-  'Hi, my name is ' +
-    person.name +
-    '. I am ' +
-    person.age +
-    ' years old and my favorite food is ' +
-    person.favoriteFood +
-    '.'
-);
+for (var myLetVariable = 0; myLetVariable < 5; myLetVariable++) {
+  console.log(myLetVariable);
+}
+
+// myLetVariable is *not* visible out here
+let sum = (a, b) => a + b;
+
+console.log(sum(9, 9));
