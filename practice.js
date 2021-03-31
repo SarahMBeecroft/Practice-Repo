@@ -19,39 +19,9 @@ const mergeArrays = () => {
 
 mergeArrays();
 
-//======================================================================================================================================================//
-// General Question: What are two-way data binding and one-way data flow, and how are they different?
-//======================================================================================================================================================//
+const capitalizeName = (name) => {
+  let formattedName = name.charAt(0).toUpperCase();
+  return formattedName;
+};
 
-let name = 'Sarah Beecroft';
-let nameCapitalized = name.toUpperCase();
-console.log(name);
-console.log(nameCapitalized);
-
-// myLetVariable is *not* visible out here
-
-for (var myLetVariable = 0; myLetVariable < 5; myLetVariable++) {
-  console.log(myLetVariable);
-}
-
-// myLetVariable is *not* visible out here
-
-function add() {
-  let sum = 0;
-  for (let i = 0, j = arguments.length; i < j; i++) {
-    sum += arguments[i];
-  }
-  return sum;
-}
-
-console.log(add(2, 4, 6, 10));
-
-function avg(...args) {
-  let sum = 0;
-  for (let value of args) {
-    sum += value;
-  }
-  return sum / args.length;
-}
-
-console.log(avg(2, 2, 2));
+console.log(capitalizeName('sarah'));
