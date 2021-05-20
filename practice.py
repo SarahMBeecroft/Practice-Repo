@@ -40,5 +40,12 @@ def say_hi(person):
     return person
 
 
-sarah = say_hi("Sarah")
-print(sarah)
+def product_of_digits(number):
+    d = str(number)
+    s = 0
+    while s < (len(d)-5):
+        print(int(d[s])*int(d[s+1])*int(d[s+2])*int(d[s+3])*int(d[s+4]))
+        s += 5 (see point 2)
+
+
+print(product_of_digits(124345565534))
