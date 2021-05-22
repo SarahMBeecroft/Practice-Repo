@@ -40,21 +40,22 @@ def say_hi(person):
     return person
 
 
-class Solution:
-    def reverseVowels(self, s: str) -> str:
-        vowels = ""
+def reverseVowels(s):
+    vowels = ""
 
-        for character in s:
-            if character in ('a', 'e', 'i', 'o', 'u'):
-                vowels += character
-
-        result = ""
+    for character in s:
+        if character in ('a', 'e', 'i', 'o', 'u'):
+            vowels += character
+            result = ""
 
         for character in s:
             if character in ('a', 'e', 'i', 'o', 'u'):
                 result += vowels[-1]
-                vowels = vowels[ := 1]
+                vowels = vowels[:-1]
             else:
                 result += character
 
         return result
+
+
+reverseVowels('my name is sarah')
