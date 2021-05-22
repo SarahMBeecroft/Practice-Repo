@@ -40,12 +40,21 @@ def say_hi(person):
     return person
 
 
-def product_of_digits(number):
-    d = str(number)
-    s = 0
-    while s < (len(d)-5):
-        print(int(d[s])*int(d[s+1])*int(d[s+2])*int(d[s+3])*int(d[s+4]))
-        s += 5 (see point 2)
+class Solution:
+    def reverseVowels(self, s: str) -> str:
+        vowels = ""
 
+        for character in s:
+            if character in ('a', 'e', 'i', 'o', 'u'):
+                vowels += character
 
-print(product_of_digits(124345565534))
+        result = ""
+
+        for character in s:
+            if character in ('a', 'e', 'i', 'o', 'u'):
+                result += vowels[-1]
+                vowels = vowels[ := 1]
+            else:
+                result += character
+
+        return result
